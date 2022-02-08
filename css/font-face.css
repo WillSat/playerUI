@@ -1,0 +1,16 @@
+/* 霞骛文楷 */
+@font-face {
+  font-family: LXGWWenKai;
+  src: url(http://github.com/lxgw/LxgwWenKai/releases/download/v1.113/LXGWWenKai-Light.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: LXGWWenKai;
+  src: url(http://github.com/lxgw/LxgwWenKai/releases/download/v1.113/LXGWWenKai-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: LXGWWenKai;
+  src: url(http://github.com/lxgw/LxgwWenKai/releases/download/v1.113/LXGWWenKai-Bold.ttf);
+  font-weight: 700;
+}
