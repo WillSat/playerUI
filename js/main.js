@@ -444,7 +444,7 @@ chatBox.component('com-msg', {
             name: file.name,
             type,
             size, // 文件大小
-            iconUrl: `../assets/img/file/${knownTypes.includes(type) ? type : 'default'}.webp`,
+            iconUrl: `https://cdn.jsdelivr.net/gh/WillSat/ctrm/assets/fileico/${knownTypes.includes(type) ? type : 'default'}.webp`,
             isPic: imgTypes.includes(type), // 是否是照片
             simplifiedImgUrl: file.simplifiedimgurl ? file.simplifiedimgurl : file.url, // 缩略图链接 / 原图链接（图片较小）
             imgSize: file.imgsize // 图片的尺寸
