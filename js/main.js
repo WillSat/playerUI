@@ -218,8 +218,8 @@ const chatBox = Vue.createApp({
         body: JSON.stringify({ uuid: T.user_UUID, num: NUM })
       })
       let result = await response.json()
-      if (result[0] !== 'success' && result[0] !== 'error') T.renderDOM(result)
-      else T.longPolling()
+      if (result[0] !== 'success' && result[0] !== 'error') return T.renderDOM(result)
+      else return T.longPolling()
     },
 
     // 滚动到底部
