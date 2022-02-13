@@ -1,4 +1,4 @@
-﻿/* 210421 */
+/* 210421 */
 :root {
   --read-background: #fffefc;
 
@@ -416,11 +416,16 @@ p, li {
 
 
 .file-img-wrapper {
+  box-sizing: content-box;
   position: relative;
   height: fit-content;
   width: fit-content;
-  max-width: min(360px, calc(100% - 100px));
-  padding: 5px;
+  /* 
+    默认单列
+    通过 media query 确定 max-width
+  */
+  max-width: 180px;
+
   border-radius: 8px;
   border: 2px solid var(--theme-color-light);
 
@@ -436,6 +441,28 @@ p, li {
 }
 .file-img-wrapper > * {
   margin: 5px;
+}
+
+/* 响应式布局 */
+@media screen and (min-width: 420px) {
+  .file-img-wrapper {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .file-img-wrapper {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .file-img-wrapper {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .file-img-wrapper {
+    max-width: 900px;
+  }
 }
 
 .imgs, .imgs_self {
@@ -498,11 +525,4 @@ p, li {
 .filewrapper:hover .fileicon {
   transform: scale(105%) translateY(-2px);
   filter: drop-shadow(0 3px 3px var(--shadow-color));
-}
-
-
-@media screen and (min-width: 850px) {
-  .file-img-wrapper {
-    max-width: 720px;
-  }
 }
