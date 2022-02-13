@@ -444,22 +444,22 @@ p, li {
 }
 
 /* 响应式布局 */
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 440px) {
   .file-img-wrapper {
     max-width: 360px;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 620px) {
   .file-img-wrapper {
     max-width: 540px;
   }
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 800px) {
   .file-img-wrapper {
     max-width: 720px;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 980px) {
   .file-img-wrapper {
     max-width: 900px;
   }
