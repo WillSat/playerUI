@@ -1,6 +1,6 @@
 /* 210421 */
 :root {
-  --read-background: #fffefc;
+  --read-background: #ffffff;
 
   --blue-grey-HB: hsl(200deg 20% 84%);
   --indigo-HB: hsl(231deg 59% 89%);
@@ -18,7 +18,7 @@
   --theme-color-very-light: #009ac214;
   --theme-color-extreme-light: #009ac206;
 
-  --shadow-color: #0f0e0c88;
+  --shadow-color: #00000088;
 }
 
 
@@ -90,10 +90,10 @@ p, li {
   color: #888;
 }
 
-#tipname, #info, #unreadtips, #bottom {
+#tipname, #info, #unreadtips, #bottom, #widge_wrapper {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  background-color: #fffefcaa;
+  background-color: #ffffffaa;
   overflow: hidden;
 
   transition: all .2s ease-out;
@@ -136,7 +136,7 @@ p, li {
   left: 0;
   top: 0;
   pointer-events: auto;
-  border-bottom: 1px solid #d1d3d4dd;
+  border-bottom: 1px solid #dddddddd;
   text-align: left;
   z-index: 5;
   width: 100%;
@@ -172,6 +172,42 @@ p, li {
   background-color: transparent;
 }
 
+
+
+/*
+  !!! TESTING !!!
+*/
+#widge_wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 40px;
+  height: 25px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 13px;
+  padding: 0 6px;
+  pointer-events: auto;
+  user-select: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: #ffffff88;
+}
+#widge_wrapper > * {
+  background-color: #fff;
+  color: var(--theme-color);
+  height: 15px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 4px;
+}
+
 #logs {
   position: absolute;
   left: 0;
@@ -191,7 +227,7 @@ p, li {
   bottom: 0;
   left: 0;
   pointer-events: auto;
-  border-top: 1px solid #d1d3d4dd;
+  border-top: 1px solid #dddddddd;
   
   display: flex;
   flex-direction: row;
@@ -260,7 +296,7 @@ p, li {
   flex-direction: row-reverse;
 }
 .msg:hover {
-  background-color: #faf9f7;
+  background-color: #fafafa;
 }
 
 .msg:last-child {
@@ -360,7 +396,7 @@ p, li {
   margin: 0 5px;
   align-self: flex-end;
   font-size: 10px;
-  color: #afaeac;
+  color: #aaa;
   line-height: 20px;
   user-select: none;
 }
